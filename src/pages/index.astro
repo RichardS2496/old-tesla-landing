@@ -1,0 +1,21 @@
+---
+import Layout from '../layouts/Layout.astro';
+import MainHeader from '../components/MainHeader.astro';
+import HeroSection from '../components/HeroSection.astro';
+import ModelY from	'../components/ModelY.astro'
+---
+
+<Layout title="Tesla - Clone Page">
+	<MainHeader/>
+	<main class="scroll-smooth snap-y snap-mandatory relative w-full h-screen overflow-auto"> <!-- estas propiedades hacen que siempre se ocupe el 100% del espacio tanto alto como ancho y que el scroll se haga completo-->
+		<div class="snap-center">
+			<HeroSection/>
+		</div>
+		<div class="snap-center">
+			<ModelY/>
+		</div>
+		<div class="snap-center">
+			<HeroSection/>
+		</div>
+	</main>
+</Layout>
